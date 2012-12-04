@@ -1,0 +1,50 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <title>[+appName+]</title>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+				<link rel="icon" type="image/ico" href="images/favicon.ico"/>
+				<link rel="stylesheet" type="text/css" href="styles/reset.css" />
+				<link rel="stylesheet" type="text/css" href="styles/styles.css" />
+    </head>
+    <body>
+        <div id="header">
+					<form method="get" action="index.php">
+						<div id="currLang"><img src="images/[+langCode+]" alt="[+langName+]" /><img src="images/downArrow.png" alt="[+langName+]" class="arrow" /><p>[+langName+]</p></div>
+						<div id="lang">
+							[+langList+]
+							<input type="hidden" name="page" value="[+currentPage+]" />
+						</div>
+					</form>
+					<h1>[+appName+]</h1>
+				</div>
+				<div id="content">
+					<div id="navWrap">
+						<ul id="topNav">
+							<li><a href="index.php?page=1">[+home+]</a></li>
+							<li><a href="index.php?page=2">[+artists+]</a></li>
+							<li><a href="index.php?page=3">[+songs+]</a></li>
+						</ul>
+					</div>
+					<h2>[+heading+]</h2>
+					[+content+]
+					<div id="summary">
+						<h3>[+summary+]</h3>
+						<ul>
+							<li>[+artistsCount+] [+activeArtists+]</li>
+							<li>[+songsCount+] [+activeSongs+]</li>
+						</ul>
+					</div>
+				</div>
+				<div id="footer">
+					<div id="copyright">
+						<p>&copy; [+appName+] - [+allRightsReserved+] [+year+] - 
+						[+iconsBy+] <a href="http://dryicons.com">dryicons.com</a> - 
+						[+flagsBy+] <a href="http://www.icondrawer.com">www.icondrawer.com</a> - 
+						[+validationIconsBy+] <a href="http://www.validationicons.com/">www.validationicons.com</a></p>
+						<a href="http://jigsaw.w3.org/css-validator/check/referer" class="validation"><img src="images/validCSS.png" alt="[+validCSS+]" /></a>
+						<a href="http://validator.w3.org/check?uri=referer" class="validation"><img src="images/validXHTML.png" alt="[+validXHTML+]" /></a>
+					</div>
+				</div>
+    </body>
+</html>

@@ -1,0 +1,70 @@
+/********** Native Styles **********/
+/* General */
+body								{ font-family: verdana; font-size: 16px; color: #333; }
+
+/* Headers */
+h1									{ font-size: 40px; padding: 40px 0 0 135px; background: url('../images/logo.png') no-repeat 0 0; height: 88px; width: 220px; margin: 0 auto; text-shadow: 0 1px #fff; }
+h2									{ font-size: 25px; margin: 30px 15px; }
+h3									{ font-size: 18px; margin-bottom: 5px; }
+h1, h2, h3							{ font-weight: bold; }
+
+/* Links */
+a:link, a:hover, a:visited			{ text-decoration: none; color: #333; }
+
+/* Tables */
+table								{ margin: 20px auto; border-collapse: collapse; }
+table td, table th					{ border: 1px solid #333; }
+table td							{ padding: 5px; font-size: 12px;}
+table th							{ background: #bbb; color: #fff; font-size: 14px; font-weight: bold; padding: 10px; width: 200px; }
+table tr:nth-of-type(odd)			{ background: #eee; }
+
+/********** Classes **********/
+.right								{ text-align: right; }
+.validation							{ margin-left: 20px; }
+.arrow								{ margin-top: 8px; }
+
+/********** ID's **********/
+/* Layout */
+#header								{ background: #bbb; }
+#footer								{ background: #eee; border-top: 1px dotted #333; }
+#content							{ width: 700px; margin: 0 auto; }
+#header, #footer, #content			{ padding: 30px; overflow: hidden; }
+
+/* Language bar */
+#header form						{ float: right; font-size: 12px; }
+#header form img, #header form p	{ float: left; }
+#header form:hover #lang			{ visibility: visible; } /* adapted from http://stackoverflow.com/questions/1462360/css-hover-one-element-effect-for-multiple-elements */
+
+#lang								{ background-color: #fff; border: 1px solid #333; padding: 5px; border-radius: 5px; visibility: hidden; clear: both; }
+
+#currLang							{ margin-bottom: 3px; padding: 0 5px; overflow: hidden; border-radius: 5px; }
+#currLang p							{ margin-top: 10px; }
+#currLang:hover						{ background-color: #eee; }
+
+button								{ border: none; cursor: pointer; background-color: transparent; border-radius: 5px; display: block; padding: 0 5px; margin: 0; width: 100%; }
+button p							{ margin-top: 10px; margin-left: 5px; }
+button:hover						{ background-color: #eee; }
+
+/* Top Nav Centering the menu without using width adapted from http://stackoverflow.com/questions/283961/centering-a-div-block-without-the-width */
+#navWrap							{ display: inline-block; position: relative; left: 50%; }
+#topNav								{ overflow: hidden; background: #eee; border-radius: 15px; border: 1px solid #333; position: relative; left: -50%; }
+#topNav li							{ float: left; padding: 20px 10px; }
+
+#topNav a:link,
+#topNav a:hover,
+#topNav a:visited					{ padding: 10px 15px; border-radius: 15px; }
+
+#topNav a:hover						{ background-color: #bbb; color: #fff; }
+
+/* Summary */
+#summary							{ background: url('../images/music.png') no-repeat 10px center; margin: 50px 15px 0 15px; padding: 10px 75px; border: 1px solid #333; border-radius: 15px; }
+#summary ul							{ list-style-type: disc; margin-left: 35px; }
+#summary li							{ margin-bottom: 5px; }
+
+/* Content */
+#content p							{ margin: 0 50px; }
+
+/* Footer */
+#footer p							{ font-size: 12px; margin-bottom: 20px; }
+#copyright							{ text-align: center; }
+#footer a							{ text-decoration: underline }
